@@ -15,8 +15,8 @@ namespace MonitCpu
             float fram = pRAM.NextValue();
             metroProgressBarCPU.Value = (int)fcpu;
             metroProgressBarRAM.Value = (int)fram;
-            lblCPU.Text = string.Format("{0:0.00%}", fcpu);
-            lblRAM.Text = string.Format("{0:0.00%}", fram);
+            lblCPU.Text = Convert.ToInt16(fcpu).ToString() + " %";
+            lblRAM.Text = Convert.ToInt16(fram).ToString() + " %"; 
         }
 
         private void Form1_Load(object sender, EventArgs e)

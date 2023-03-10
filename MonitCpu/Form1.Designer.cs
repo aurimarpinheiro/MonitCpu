@@ -60,14 +60,14 @@
             // 
             // metroProgressBarCPU
             // 
-            this.metroProgressBarCPU.Location = new System.Drawing.Point(112, 83);
+            this.metroProgressBarCPU.Location = new System.Drawing.Point(75, 70);
             this.metroProgressBarCPU.Name = "metroProgressBarCPU";
             this.metroProgressBarCPU.Size = new System.Drawing.Size(212, 19);
             this.metroProgressBarCPU.TabIndex = 0;
             // 
             // metroProgressBarRAM
             // 
-            this.metroProgressBarRAM.Location = new System.Drawing.Point(112, 131);
+            this.metroProgressBarRAM.Location = new System.Drawing.Point(75, 110);
             this.metroProgressBarRAM.Name = "metroProgressBarRAM";
             this.metroProgressBarRAM.Size = new System.Drawing.Size(212, 19);
             this.metroProgressBarRAM.TabIndex = 1;
@@ -75,7 +75,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(23, 83);
+            this.metroLabel1.Location = new System.Drawing.Point(23, 70);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(35, 19);
             this.metroLabel1.TabIndex = 2;
@@ -84,7 +84,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(23, 131);
+            this.metroLabel2.Location = new System.Drawing.Point(23, 110);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(38, 19);
             this.metroLabel2.TabIndex = 3;
@@ -93,7 +93,7 @@
             // lblCPU
             // 
             this.lblCPU.AutoSize = true;
-            this.lblCPU.Location = new System.Drawing.Point(351, 83);
+            this.lblCPU.Location = new System.Drawing.Point(307, 70);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(27, 19);
             this.lblCPU.TabIndex = 4;
@@ -102,7 +102,7 @@
             // lblRAM
             // 
             this.lblRAM.AutoSize = true;
-            this.lblRAM.Location = new System.Drawing.Point(351, 131);
+            this.lblRAM.Location = new System.Drawing.Point(307, 110);
             this.lblRAM.Name = "lblRAM";
             this.lblRAM.Size = new System.Drawing.Size(27, 19);
             this.lblRAM.TabIndex = 5;
@@ -112,7 +112,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 199);
+            this.BackgroundImage = global::MonitCpu.Properties.Resources.AZUL50;
+            this.ClientSize = new System.Drawing.Size(360, 158);
             this.Controls.Add(this.lblRAM);
             this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.metroLabel2);
@@ -120,7 +121,10 @@
             this.Controls.Add(this.metroProgressBarRAM);
             this.Controls.Add(this.metroProgressBarCPU);
             this.Name = "Form1";
+            this.Opacity = 0.8D;
             this.Text = "RAM & CPU";
+            this.Theme = MetroFramework.MetroThemeStyle.Default;
+            this.TransparencyKey = System.Drawing.Color.LavenderBlush;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pRAM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).EndInit();
