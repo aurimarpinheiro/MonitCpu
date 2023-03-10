@@ -120,10 +120,15 @@
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroProgressBarRAM);
             this.Controls.Add(this.metroProgressBarCPU);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.7D;
+            this.Resizable = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "RAM & CPU";
             this.Theme = MetroFramework.MetroThemeStyle.Default;
+            this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.LavenderBlush;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pRAM)).EndInit();
